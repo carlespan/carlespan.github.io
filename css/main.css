@@ -2,7 +2,7 @@ body{
 	font-family: sans-serif;
 	margin: 0;
 	padding: 0;
-	background-color: #F4F9F9;
+	background-color: #F2F9F9;
 }
 
 /*Cabecera*/
@@ -45,7 +45,7 @@ ul li:last-child{
 /*Barra de navegación*/
 
 nav{
-	background-color: #E3ECEC;
+	background-color: #D8EEEE;
 	position: sticky;
 	top: 0;
 	text-align: center;
@@ -80,13 +80,11 @@ section{
 /* Proyectos (articulos) */
 article a{
 	text-decoration: none;
-	font-size: 130%;
+	font-size: 1.5rem;
+	color: #003071;
 }
-
 article img{
-	width: 30%;
-}
-article p{
-	background-color: #000;
-	display: inline-block;
+	float: left;
+	width: 20rem;
+	margin-right: 2rem;
 }
