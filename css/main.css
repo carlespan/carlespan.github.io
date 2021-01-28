@@ -1,3 +1,4 @@
+
 body{
 	font-family: sans-serif;
 	line-height: 1.5rem;
@@ -7,6 +8,7 @@ body{
 }
 h2{
 	font-size: 1.8rem;
+	text-align: center;
 }
 h3{
 	font-size: 1.5rem;
@@ -77,15 +79,17 @@ nav a{
 nav a:active{
 	background-color: rgba(0,0,0,0.5);
 }
+
 hr{
 	margin: 0;
-	opacity: 0.2;
+	opacity: 0.3;
 }
 #home{
 	position: fixed;
 	top: 0px;
 	left: -60px;
 }
+
 
 /* Secciones */
 section{
@@ -94,9 +98,6 @@ section{
 }
 
 	/* Portafolio */
-	#portafolio_title{
-		text-align: center;
-	}
 	article{
 		margin: 3rem 2rem;
 	}
@@ -127,8 +128,88 @@ section{
 	}
 	.sobremi_children{
 		clear: both;
-		margin-bottom: 5rem;
+		margin-bottom: 3rem;
+		padding-top: 1rem;
+		background-color: #E1F4F4;
 	}
 
 		/*Formacion*/
 
+		.formacion_children:first-of-type{
+			margin-top: 3rem;
+		}
+		.formacion_children{
+			padding: 0rem 0rem;
+			display: flex;
+			justify-content: center;
+		}
+		.formacion_categorias{
+			display: inline-block;
+			vertical-align: top;
+			width: 22rem;
+		}
+		.formacion_listas li{
+			margin: 1.5rem 0rem;
+			list-style-type: none;  
+		}
+		.formacion_listas li:first-child{
+			margin-top: 0rem;
+		}
+		.formacion_listas li::first-line{
+			font-weight: bolder;
+		}
+
+
+
+/*Contacto*/
+
+	footer{
+		background-color: rgba(10,88,94,0.8);
+		padding: 1rem 1rem;
+		align-items: center;
+	}
+
+	.contact-method {
+		margin: 1em 0 2em 0;
+		padding-left: 3.25em;
+		position: relative;
+	}
+		.contact-method .icon {
+			left: 0;
+			position: absolute;
+			top: 0;
+		}
+		.contact-method h3 {
+			margin: 0 0 0.5em 0;
+		}
+
+	#contactaconmigo{
+		text-align: center;
+		font-size: 2.5rem;
+	}
+
+	.contacto{
+		padding: 1rem 3rem;
+	}
+
+/*	Iconos redes sociales*/
+
+		ul.icons li {
+			display: inline-block;
+			padding: 0 2em 0 0;
+		}
+		ul.icons li a {
+			text-decoration: none;
+		}
+
+/*Copyright*/
+.copyright{
+	color: rgba(0,0,0,0.7);
+	text-align: right;
+	height: 0.5rem;
+}
+.copyright li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 0rem 2rem;
+}
