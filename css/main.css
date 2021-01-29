@@ -1,3 +1,6 @@
+/**{
+	border: 1px solid;
+}*/
 
 body{
 	font-family: sans-serif;
@@ -7,11 +10,12 @@ body{
 	background-color: #F2F9F9;
 }
 h2{
-	font-size: 1.8rem;
+	font-size: 2rem;
 	text-align: center;
 }
 h3{
 	font-size: 1.5rem;
+	color: #003071;
 }
 div{
 	margin: 1rem 0rem;
@@ -94,12 +98,36 @@ hr{
 /* Secciones */
 section{
 	padding: 5%;
-	margin: 0rem 0rem;
+	margin: 7rem 0rem;
+}
+section:first-of-type{
+	padding-top: 3.5rem;
+	margin-top: 0px;
+}
+section h2 ~ p {
+	text-align: center;
+	width: 70%;
+	margin: 0 auto;
 }
 
 	/* Portafolio */
+	#portafolio > h2{
+		font-size: 2.5rem;
+	}
+	#portafolio > h2::first-line{
+		font-weight: bold;
+		font-size: 1.1rem;
+		font-variant: small-caps;
+		line-height: 4rem;
+		letter-spacing: 0.3rem;
+		color: #A700F4;
+	}
 	article{
 		margin: 3rem 2rem;
+		padding: 0rem;
+	}
+	article h3{
+		margin: 0rem;
 	}
 	article a{
 		text-decoration: none;
@@ -112,19 +140,8 @@ section{
 	}
 
 	/*Sobre mi*/
-	label{
-		display: inline-block;
-	}
-	meter{
-		display: inline-block;
-		vertical-align: middle;
-		height: 2rem;
-		width: 10rem;
-	}
-	.perfil_children{
-		display: inline-block;
-		vertical-align: top;
-		margin-right: 5%;
+	#sobremi{
+		padding: 0rem;
 	}
 	.sobremi_children{
 		clear: both;
@@ -133,12 +150,33 @@ section{
 		background-color: #E1F4F4;
 	}
 
-		/*Formacion*/
+		/*Perfil*/
+		label{
+			display: inline-block;
+		}
+		meter{
+			display: inline-block;
+			vertical-align: middle;
+			height: 2rem;
+			width: 10rem;
+		}
+		.perfil_children{
+			display: flex;
+			justify-content: center;
+		}
+		.perfil_categorias{
+			display: inline-block;
+			vertical-align: top;
+			margin: 1rem;
+		}
 
+
+		/*Formacion*/
 		.formacion_children:first-of-type{
-			margin-top: 3rem;
+			margin-top: 5rem;
 		}
 		.formacion_children{
+			margin: 2rem 0rem;
 			padding: 0rem 0rem;
 			display: flex;
 			justify-content: center;
@@ -146,7 +184,14 @@ section{
 		.formacion_categorias{
 			display: inline-block;
 			vertical-align: top;
-			width: 22rem;
+			margin: 0rem 2rem;
+			width: 60rem;
+		}
+		h3.formacion_categorias{
+			text-align: right;
+		}
+		.formacion_listas{
+			padding: 0rem;
 		}
 		.formacion_listas li{
 			margin: 1.5rem 0rem;
@@ -157,6 +202,11 @@ section{
 		}
 		.formacion_listas li::first-line{
 			font-weight: bolder;
+		}
+		#formacion hr{
+			margin: 0 auto;
+			width: 75%;
+			opacity: 0.6;
 		}
 
 
