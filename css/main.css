@@ -65,6 +65,7 @@ nav{
 	position: sticky;
 	top: 0;
 	text-align: center;
+	z-index: 1;
 }
 nav a{
 	display: inline-block;
@@ -98,7 +99,7 @@ hr{
 /* Secciones */
 section{
 	padding: 0% 5%;
-	margin: 4rem 0rem;
+	margin: 2rem 0rem;
 }
 section:first-of-type{
 	padding-top: 2rem;
@@ -146,7 +147,7 @@ section h2 ~ p {
 
 	/*Sobre mi*/
 	#sobremi{
-		padding: 2rem 0rem;
+		padding: 1.5rem 0rem;
 	}
 	.sobremi_children{
 		clear: both;
@@ -214,18 +215,16 @@ section h2 ~ p {
 			opacity: 0.6;
 		}
 
-
-
 /*Contacto*/
 
 	footer{
 		background-color: rgba(10,88,94,0.8);
 		padding: 1rem 1rem;
-		align-items: center;
 	}
 
 	.contact-method {
-		margin: 1em 0 2em 0;
+		margin: 0rem;
+		margin-bottom: 2rem;
 		padding-left: 3.25em;
 		position: relative;
 	}
@@ -235,18 +234,54 @@ section h2 ~ p {
 			top: 0;
 		}
 		.contact-method h3 {
-			margin: 0 0 0.5em 0;
+			margin: 0em;
+			margin-bottom:0.5em;
 		}
 
 	#contactaconmigo{
 		text-align: center;
 		font-size: 2.5rem;
 	}
-
-	.contacto{
-		padding: 1rem 3rem;
+	section.contacto{
+		padding: 0rem 3rem;
 		margin: 0rem;
 	}
+
+	#footer_div{
+		display: flex;
+		margin-top: 5rem;
+	}
+	#division_izquierda{
+		margin: 0px;
+		display: inline-block;
+	}
+
+/*Formulario mensaje*/
+
+#message_form{
+	margin-left: 12rem;
+	display: inline-block;
+}
+#message_form > *{
+	display: block;
+	margin: 0.5rem;
+	font-size: 15px;
+}
+#message_form > .emisor{
+	display: inline-block;
+	width: 12rem;
+	height: 2rem;
+}
+#message_form > .send_button{
+	width: 8rem;
+	height: 2rem;
+}
+#message_form > textarea{
+	width: 35rem;
+	height: 10rem;
+	font-size: 15px;
+}
+
 
 /*	Iconos redes sociales*/
 

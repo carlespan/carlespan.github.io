@@ -129,31 +129,48 @@
 		
 		<h2 id="contactaconmigo">Contacta conmigo</h2>
 
-		<section class="email_tfno contacto">
+		<div id="footer_div">
 
-			<div class="contact-method">
-				<i class="icon far fa-envelope fa-2x"></i>
-				<h3>Email</h3>
-				<a href="mailto:carlespa@ucm.es">carlespa@ucm.es</a>
-			</div>			
-			<div class="contact-method">
-				<i class="icon fas fa-phone fa-2x"></i>
-				<h3>Teléfono</h3>   
-				<span>608 40 11 96</span>
-			</div>	
+			<div id="division_izquierda">
 
-		</section>
+				<section class="email_tfno contacto">
+					<div class="contact-method">
+						<i class="icon far fa-envelope fa-2x"></i>
+						<h3>Email</h3>
+						<a href="mailto:carlespa@ucm.es">carlespa@ucm.es</a>
+					</div>			
+					<div class="contact-method">
+						<i class="icon fas fa-phone fa-2x"></i>
+						<h3>Teléfono</h3>   
+						<span>608 40 11 96</span>
+					</div>	
+				</section>
 
-		<section class="social contacto">
-									
-				<ul class="icons">
-					<li><a href="https://twitter.com/carlespan" class="icon fab fa-twitter fa-2x" target="_blank"></a></li>
-					<li><a href="https://instagram.com/carlespan" class="icon fab fa-instagram fa-2x" target="_blank"></a></li>
-					<li><a href="https://github.com/carlespan" class="icon fab fa-github fa-2x" target="_blank"></a></li>
-					<li><a href="https://www.linkedin.com/in/carlos-espanna-castanno/" class="icon fab fa-linkedin fa-2x" target="_blank"></a></li>
-				</ul>
-					
-		</section>
+				<section class="social contacto">						
+						<ul class="icons">
+							<li><a href="https://twitter.com/carlespan" class="icon fab fa-twitter fa-2x" target="_blank"></a></li>
+							<li><a href="https://instagram.com/carlespan" class="icon fab fa-instagram fa-2x" target="_blank"></a></li>
+							<li><a href="https://github.com/carlespan" class="icon fab fa-github fa-2x" target="_blank"></a></li>
+							<li><a href="https://www.linkedin.com/in/carlos-espanna-castanno/" class="icon fab fa-linkedin fa-2x" target="_blank"></a></li>
+						</ul>		
+				</section>
+
+			</div>
+
+			<form id="message_form" action="#contacto"> <!-- Añadir method="post"-->
+					<input class="emisor" type="text" name="name" placeholder="Nombre" />
+					<input class="emisor" type="text" name="email" placeholder="Email" />
+					<textarea name="message" placeholder="Mensaje"></textarea>
+					<input class="send_button" type="submit" value="Send Message" onclick="return alerta()" />
+			</form>
+
+			<script type="text/javascript">
+				function alerta(){
+					alert("Función aún no disponible, disculpen las molestias. Si quieres enviarme un mensaje escríbeme al email que aparece a la izquierda")
+				}
+			</script>
+
+		</div>
 
 		<hr>
 
