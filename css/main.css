@@ -124,7 +124,7 @@ section h2 ~ p {
 		color: #A700F4;
 	}
 	article{
-		margin: 3rem 2rem;
+		margin: 5rem 2rem;
 		padding: 0rem;
 		height: 15rem;
 	}
@@ -142,6 +142,9 @@ section h2 ~ p {
 	}
 	article p{
 		text-align: justify;
+	}
+	article:last-child{
+		margin-bottom: 10rem;
 	}
 
 
