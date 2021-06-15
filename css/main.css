@@ -126,7 +126,7 @@ section h2 ~ p {
 	article{
 		margin: 5rem 2rem;
 		padding: 0rem;
-		height: 15rem;
+		/*height: 20rem;*/
 	}
 	article h3{
 		margin: 0rem;
