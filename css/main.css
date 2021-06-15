@@ -209,7 +209,7 @@ section h2 ~ p {
 		.formacion_listas li:first-child{
 			margin-top: 0rem;
 		}
-		.formacion_listas li::first-line{
+		.formacion_listas li .item{
 			font-weight: bolder;
 		}
 		#formacion hr{
@@ -239,6 +239,9 @@ section h2 ~ p {
 		.contact-method h3 {
 			margin: 0em;
 			margin-bottom:0.5em;
+		}
+		#mail{
+			color: #000;
 		}
 
 	#contactaconmigo{
