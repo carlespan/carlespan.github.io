@@ -7,7 +7,7 @@ body{
 	line-height: 1.5rem;
 	margin: 0rem;
 	padding: 0rem;
-	background-color: #F2F9F9;
+	background-color: rgba(214,239,239,0.3);
 }
 h2{
 	font-size: 2rem;
@@ -24,10 +24,11 @@ div{
 
 /*Cabecera*/
 header{
-	background: #FFAF33 url("../imgs/datos.jpg") no-repeat fixed center;
+	background: url("../imgs/electronics-photonics-verde.jpg") no-repeat fixed center;
 	background-size: cover;
 	padding: 1% 5%;
 }
+
 header img{
 	display: block;
 	width: 20%;
@@ -42,11 +43,13 @@ h1{
 	margin-bottom: 0
 }
 #ul_header{
+	display: block;
 	text-transform: uppercase;
 	color: #FFFFFF;
 	text-align: center;
 	letter-spacing: 1px;
-	margin: 35px;
+	width: auto;
+	margin: 2.5rem;
 }
 #ul_header li{
 	display: inline-block;
@@ -61,7 +64,7 @@ h1{
 /*Barra de navegación*/
 
 nav{
-	background-color: #D8EEEE;
+	background-color: #D4EBEB;
 	position: sticky;
 	top: 0;
 	text-align: center;
@@ -81,8 +84,8 @@ nav a{
 	font-size: 85%;
 	text-transform: uppercase;
 }
-nav a:active{
-	background-color: rgba(0,0,0,0.5);
+nav a:hover{
+	background-color: rgba(0,0,0,0.1);
 }
 
 hr{
@@ -96,20 +99,57 @@ hr{
 }
 
 
-/* Secciones */
-section{
-	padding: 0% 5%;
-	margin: 2rem 0rem;
+
+/* Slides */
+.slides {
+	display: none;
 }
-section:first-of-type{
-	padding-top: 2rem;
+.slides:first-of-type {
+	display: block;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dots {
+	padding: 0;
+}
+.active {
+	background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+/* Secciones */
+body > section{
+	margin: 5rem 0rem;
+}
+body > section{
+	padding-top: 1.8rem;
 	margin-top: 0px;
 }
-section h2 ~ p {
+body > section h2 ~ p {
 	text-align: center;
 	width: 70%;
 	margin: 0 auto;
 }
+
 
 	/* Portafolio */
 	#portafolio > h2{
@@ -123,92 +163,124 @@ section h2 ~ p {
 		letter-spacing: 0.3rem;
 		color: #A700F4;
 	}
-	article{
-		margin: 5rem 2rem;
-		padding: 0rem;
-		/*height: 20rem;*/
+	#portafolio > section {
+		margin: 5rem 5rem 0rem;
 	}
-	article h3{
-		margin: 0rem;
+	#portafolio > section > h3 {
+		font-size: 1.8rem;
+	}
+
+	article{
+		margin: 1rem 1rem;
+		padding: 2rem;
+		display: inline-block;
+		background-color: #FFFFFF;
+		border: 1px outset;
+		width: 33%;
+		font-size: 15px;
+	}
+	article h4 {
+		font-size: 1.1rem;
 	}
 	article a{
 		text-decoration: none;
 		color: #003071;
 	}
-	article img{
-		float: left;
-		width: 20rem;
-		margin-right: 2rem;
+	article img,video{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
 	}
 	article p{
 		text-align: justify;
 	}
-	article:last-child{
-		margin-bottom: 10rem;
+	.more-text {display: none;}
+	.more-button {
+		border: none;
+		background-color: white;
+		text-decoration: underline;
+		color: blue;
+		font-size: 14px;
+	    cursor: pointer;
+	}
+	.mySlides {
+		display: flex;
+		justify-content: center;
 	}
 
+	#TFM{
+		width: 40%;
+	}
+	
 
 	/*Sobre mi*/
-	#sobremi{
-		padding: 1.5rem 0rem;
-	}
-	.sobremi_children{
+
+	#sobremi > section{
 		clear: both;
-		margin-bottom: 3rem;
-		padding-top: 1rem;
-		background-color: #E1F4F4;
+		margin: 2rem 0rem 4rem;
+		padding: 1rem;
+		background-color: rgba(214,239,239,0.8);
 	}
 
 		/*Perfil*/
-		label{
-			display: inline-block;
+		#perfil form {
+			text-align: right;
 		}
-		meter{
-			display: inline-block;
+		#perfil form > meter{
 			vertical-align: middle;
 			height: 2rem;
-			width: 10rem;
+			width: 9rem;
 		}
-		.perfil_children{
+		#perfil form > label,meter {
+			display: inline-block;
+			margin: 0.3rem;
+		}
+		#perfil > div{
 			display: flex;
 			justify-content: center;
 		}
 		.perfil_categorias{
 			display: inline-block;
 			vertical-align: top;
-			margin: 1rem;
+			margin: 2rem;
+			width: 16.5rem;
 		}
 
 
 		/*Formacion*/
-		.formacion_children:first-of-type{
-			margin-top: 5rem;
+		#formacion > div:first-of-type{
+			margin-top: 4rem;
 		}
-		.formacion_children{
-			margin: 2rem 0rem;
-			padding: 0rem 0rem;
+		#formacion > div{
 			display: flex;
 			justify-content: center;
+			margin-top: 2rem;
 		}
-		.formacion_categorias{
+		#formacion > div h3,ul{
 			display: inline-block;
-			vertical-align: top;
+			width: 35%;
 			margin: 0rem 2rem;
-			width: 60rem;
 		}
-		h3.formacion_categorias{
+		#formacion > div > ul{
+			padding-left: 0rem;
+		}
+		#formacion > div > h3{
 			text-align: right;
 		}
-		.formacion_listas{
-			padding: 0rem;
+		#formacion > div > ul li{
+			margin-bottom: 1.5rem;
+			list-style-type: none; 
 		}
-		.formacion_listas li{
-			margin: 1.5rem 0rem;
-			list-style-type: none;  
+		#formacion > div > ul li:last-child {
+			margin-bottom: 0;
 		}
-		.formacion_listas li:first-child{
-			margin-top: 0rem;
+		/*Formación > Cursos*/
+		div.cursos{
+			margin: 0;
+			padding: 0;
 		}
+		
 		.formacion_listas li .item{
 			font-weight: bolder;
 		}
@@ -222,7 +294,8 @@ section h2 ~ p {
 
 	footer{
 		background-color: rgba(10,88,94,0.8);
-		padding: 1rem 1rem;
+		padding: 1rem 1rem 0rem;
+		margin-top: 10rem;
 	}
 
 	.contact-method {
@@ -290,7 +363,12 @@ section h2 ~ p {
 
 
 /*	Iconos redes sociales*/
-
+		
+		ul.icons{
+			display: flex;
+			padding: 0px;
+			width: auto;
+		}
 		ul.icons li {
 			display: inline-block;
 			padding: 0 2em 0 0;
@@ -300,13 +378,11 @@ section h2 ~ p {
 		}
 
 /*Copyright*/
-.copyright{
+#copyright{
 	color: rgba(0,0,0,0.7);
 	text-align: right;
-	height: 0.5rem;
+	margin: auto;
+	width: 95%;
+	padding: 0.75rem;
 }
-.copyright li{
-	list-style-type: none;
-	display: inline-block;
-	padding: 0rem 2rem;
-}
+

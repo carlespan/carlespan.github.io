@@ -6,18 +6,20 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="
 		sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<script src="js/my_script.js" type="text/javascript"></script>
 </head>
 <body>
 	<!--Header-->
 	<header>
 		<img src="imgs/avatar.jpg" alt="avatar">
 		<h1>Carlos España Castaño</h1>
-		<p>
-			<ul id="ul_header">
-				<li>Físico</li>
-				<li>Científico de datos</li>
-			</ul>
-		</p>
+		
+		<ul id="ul_header">
+			<li>Físico</li>
+			<li>Electrónica & Fotónica</li>
+			<li>Ciencia de datos</li>
+		</ul>
+	
 	</header>
 	<nav>
 		<a href="#" id="home"><i class="fas fa-home fa-2x"></i></a>
@@ -28,120 +30,176 @@
 	</nav>
 	<section id="portafolio">
 		<h2>Portafolio<br>Echa un vistazo a algunos de mis proyectos</h2>
-		<p>Me gustaría presentarte algunos de las proyectos en los que he trabajado. Entre ellos encontrarás estudios de predicción y clasificación con diferentes tecnologías y algoritmos de Machine Leraning y Deep Learning. No dudes en contactar conmigo para cualquier pregunta o sugerencia.</p>
-		<article>
-			<img src="imgs/orange.jpg">
-			<h3><a href="https://carlespan.github.io/customer-churn-model/">Predicción del abandono de clientes</a></h3>
-				<p>
-				El abandono de clientes a otras compañias es un gran problema en la industria de las telecomunicaciones hoy en día. El mercado de las telecomunicaciones se expande día a día y las empresas se enfrentan a una grave pérdida de ingresos debido al aumento de la competencia, que proporciona a los clientes enormes incentivos para atraerlos a cambiar a sus servicios. Por ello las teleoperadoras están tratando de encontrar las razones de por las que sus clientes deciden irse a otras compañias. 
-				<br>
-				El proceso de la teleoperadora para retener a los clientes rentables es de gran importancia, ya que adquirir un nuevo cliente es más costoso que retener a los existentes. Si se conocen las razones de los clientes del cambio a las otras compañias, los proveedores pueden mejorar sus servicios para satisfacer las necesidades de los clientes. Este es un conjunto de datos de Orange Telecom, que consiste en datos de actividad del cliente relacionados con llamadas, suscripciones a planes de llamadas y mensajes, etc., junto con una etiqueta que especifica si un cliente se fue de la compañía. En base a estas características, en este proyecto predecimos el abandono de clientes y arrojaremos luz sobre sus razones para tomar acciones preventivas.
-				<br><p style="text-align: right;">
-				<em>Objetivo: Interpretación de las principales variables que provocan el abandono de clientes</em>, de cara a elaborar planes estratégicos.</p>
-				</p>
-		</article>
-		<article>
-			<img src="imgs/matrix.jpg">
-			<h3><a href="https://carlespan.github.io/regresion-logistica">Predicciones bancarias: Suscripciones de clientes a un producto bancario</a></h3>
-			<p>En este estudio de caso realizamos un modelo predictivo de regresión logística que nos proporcione información útil acerca de las compras de un producto (un depósito a largo plazo) de los clientes de un banco, con el objetivo de encontrar las mejores estrategias y orientar las campañas de marketing. Los datos se han obtenido de un dataset clásico del Repositorio UCI Machine Learning relacionados con campañas directas de marketing de una institución bancaria portuguesa. Las campañas de marketing consistieron en llamadas telefónicas, recopilando datos sobre estas llamadas y la decisión final del cliente. <br><p style="text-align: right;"><em>Objetivo: Predecir si el cliente de suscribirá (sí/no) al depósito a largo plazo</em>, de cara a decisiones futuras.</p></p>
-		</article>
-		<article>
-			<img src="imgs/Wellbeing-and-lifestyle.jpg">
-			<h3><a href="https://carlespan.github.io/Wellbeing-and-lifestyle-Kaggle/">Análisis exploratorio y contraste de hipótesis para una mejora de la calidad de vida</a></h3>
-			<p>En este proyecto realizamos un exhaustivo análisis exploratorio de los datos del dataset "Wellbeing and lifestyle data" obtenido de la plataforma Kaggle sobre salud y bienestar. ¿Qué mejoras en nuestros hábitos son clave para maximizar nuestros logros? ¿Qué hábitos nos ayudan a combatir el exceso de estrés? Si te interesa saber cómo puedes mejorar tu bienestar y ser más productivo en todos los ámbitos de tu vida te invito a echarle un vistazo al estudio. <br><p style="text-align: right;"> <em>Objetivo: Identificación de fuentes de estrés y de posibles factores clave para la consecución de logros</em></p></p>
-		</article>
+		<p>Me gustaría presentarte algunos de las proyectos en los que he trabajado. Entre ellos encontrarás aplicaciones de Internet de las Cosas así como estudios de predicción y clasificación con algoritmos de Machine Leraning. No dudes en contactar conmigo para cualquier pregunta o sugerencia.</p>
+
+
+		<section>
+			<h3>Internet de las Cosas</h3>
+			<div class="mySlides">
+				<article id="TFM">
+					<a href="#">
+						<video width="400" controls>
+							  <source src="imgs/FisioterApp Music1080 ‐ Hecho con Clipchamp.mp4" type="video/mp4">
+						</video>
+						<h4>Sistema de rehabilitación online</h4>
+					</a>
+					<p>
+						Sistema que monitoriza movimientos físicos de pacientes en rehabilitación y almacena los datos en la nube para la posterior evaluación del médico de forma remota.<br><p style="text-align: right;">Trabajo de Fin de Máster. Calificación: sobresaliente (9,5).</p>
+					</p>
+				</article>
+			</div>
+		</section>
+
+		<section>
+			<h3>Ciencia de datos</h3>
+			<div class="mySlides">
+				<article>
+					<a href="https://carlespan.github.io/customer-churn-model/">
+						<img src="imgs/orange.jpg">
+						<h4>Predicción del abandono de clientes</h4>
+					</a>
+					<p>El abandono de clientes a otras compañias es un gran problema en la industria de las telecomunicaciones hoy en día. <span class="ellipsis">...</span><span class="more-text"> El mercado de las telecomunicaciones se expande día a día y las empresas se enfrentan a una grave pérdida de ingresos debido al aumento de la competencia, que proporciona a los clientes enormes incentivos para atraerlos a cambiar a sus servicios. Por ello las teleoperadoras están tratando de encontrar las razones de por las que sus clientes deciden irse a otras compañias. 
+					El proceso de la teleoperadora para retener a los clientes rentables es de gran importancia, ya que adquirir un nuevo cliente es más costoso que retener a los existentes. Si se conocen las razones de los clientes del cambio a las otras compañias, los proveedores pueden mejorar sus servicios para satisfacer las necesidades de los clientes. Este es un conjunto de datos de Orange Telecom, que consiste en datos de actividad del cliente relacionados con llamadas, suscripciones a planes de llamadas y mensajes, etc., junto con una etiqueta que especifica si un cliente se fue de la compañía. En base a estas características, en este proyecto predecimos el abandono de clientes y arrojaremos luz sobre sus razones para tomar acciones preventivas.
+					</span><button onclick="myFunction(0)" class="more-button">Leer más</button>
+					<br><p style="text-align: right;">
+					<em>Objetivo: Interpretación de las principales variables que provocan el abandono de clientes</em>, de cara a elaborar planes estratégicos.</p></p>
+				</article>
+				
+				<article>
+					<a href="https://carlespan.github.io/regresion-logistica">
+						<img src="imgs/matrix.jpg">
+						<h4>Predicciones bancarias: Suscripciones de clientes a un producto bancario</h4>
+					</a>
+					<p>En este estudio de caso realizamos un modelo predictivo sobre las compras de un producto (un depósito a largo plazo) de los clientes de un banco, con el objetivo de encontrar las mejores estrategias y orientar las campañas de marketing. <span class="ellipsis">...</span><span class="more-text">. El modelo consiste en una regresión logística. Los datos se han obtenido de un dataset clásico del Repositorio UCI Machine Learning relacionados con campañas directas de marketing de una institución bancaria portuguesa. Las campañas de marketing consistieron en llamadas telefónicas, recopilando datos sobre estas llamadas y la decisión final del cliente. 
+					</span><button onclick="myFunction(1)" class="more-button">Leer más</button>
+					<br><p style="text-align: right;"><em>Objetivo: Predecir si el cliente de suscribirá (sí/no) al depósito a largo plazo</em>, de cara a decisiones futuras.</p></p>
+				</article>
+				<article>
+					<a href="https://carlespan.github.io/Wellbeing-and-lifestyle-Kaggle/">
+						<img src="imgs/Wellbeing-and-lifestyle.jpg">
+						<h4>Análisis exploratorio y contraste de hipótesis para una mejora de la calidad de vida</h4>
+					</a>
+					<p>En este proyecto realizamos un exhaustivo análisis exploratorio de los datos del dataset "Wellbeing and lifestyle data" sobre salud y bienestar. ¿Qué mejoras en nuestros hábitos son clave para maximizar nuestros logros? ¿Qué hábitos nos ayudan <span class="ellipsis">...</span><span class="more-text"> a combatir el exceso de estrés? Si te interesa saber cómo puedes mejorar tu bienestar y ser más productivo en todos los ámbitos de tu vida te invito a echarle un vistazo al estudio. 
+					</span><button onclick="myFunction(2)" class="more-button">Leer más</button>
+					<br><p style="text-align: right;"> <em>Objetivo: Identificación de fuentes de estrés y de posibles factores clave para la consecución de logros.</em></p></p>
+				</article>
+			</div>
+		</section>
 
 	</section>
+
+
 	<section id="sobremi">
-			<div id="perfil" class="sobremi_children">
+			<section id="perfil">
 				<h2>Perfil</h2>
-				<p>Soy Carlos España, físico y amante de las ciencias de la computación, interesado en el potencial del aprendizaje automático para hacer predicciones, extraer información útil de grandes masas de datos y para la creación de herramientas que satisfacen las necesidades de las personas. 
+				<p>Soy Carlos España, físico y amante de la Electrónica y la Inteligencia Artificial, interesado en el uso de la tecnología para satisfacer necesidades humanas y del entorno. Cuento con un Máster en Nuevas Tecnologías Electrónicas y Fotónicas por la UCM y con conocimientos sobre distintas técnicas de Machine Learning. Me considero trabajador, meticuloso y con gran capacidad de aprendizaje.
 				</p>
 
-				<div class="perfil_children">
+				<div>
 
 					<div class="perfil_categorias">
 						<h3>Habilidades</h3>
 						<form>
-							<label for="analisis">Capacidad de análisis: </label>
-							<meter id="analisis" min="0" max="100" value="90" high=".75">90%</meter><br>
-							<label for="aprendizaje">Capacidad de aprendizaje: </label>
+							<label for="aprendizaje">Aprendizaje: </label>
 							<meter id="aprendizaje" min="0" max="100" value="100" high=".75">100%</meter><br>
-							<label for="autogestion">Capacidad de autogestión: </label>
-							<meter id="autogestion" min="0" max="100" value="80" high=".75">80%</meter><br>
-							<label for="interpersonales">Habilidades interpersonales: </label>
-							<meter id="interpersonales" min="0" max="100" value="70" high=".75">70%</meter><br>
+							<label for="analisis">Análisis: </label>
+							<meter id="analisis" min="0" max="100" value="90" high=".75">90%</meter><br>
+							<label for="autogestion">Autogestión: </label>
+							<meter id="autogestion" min="0" max="100" value="90" high=".75">80%</meter><br>
 						</form>
 					</div>
 
 					<div class="perfil_categorias">
-						<h3 >Tecnologías</h3>
-						<form>
+						<h3 >Programación</h3>
+						<form class="programacion slides fade">
 							<label for="python">Python: </label>
-							<meter id="python" min="0" max="100" value="90" high=".75">90%</meter><br>
-							<label for="scikit-learn">Scikit Learn: </label>
-							<meter id="scikit-learn" min="0" max="100" value="90" high=".75">90%</meter><br>
-							<label for="tensorflow">Tensorflow: </label>
-							<meter id="tensorflow" min="0" max="100" value="80" high=".75">80%</meter><br>
+							<meter id="python" min="0" max="100" value="90" high=".5">90%</meter><br>
+							<label for="C">C: </label>
+							<meter id="C" min="0" max="100" value="80" high=".75">80%</meter><br>
+							<label for="matlab">Matlab: </label>
+							<meter id="matlab" min="0" max="100" value="70" high=".75">70%</meter><br>
 						</form>
+						<form class="programacion slides fade">
+							<label for="html">HTML: </label>
+							<meter id="html" min="0" max="100" value="80" high=".5">80%</meter><br>
+							<label for="CSS">CSS: </label>
+							<meter id="CSS" min="0" max="100" value="80" high=".75">80%</meter><br>
+							<label for="javascript">JavaScript: </label>
+							<meter id="javascript" min="0" max="100" value="70" high=".75">70%</meter><br>
+						</form>
+						<div style="text-align:center" class="dots">
+						    <span class="programacion dot active" onclick="currentSlide(1,'programacion')"></span> 
+						    <span class="programacion dot" onclick="currentSlide(2,'programacion')"></span> 
+						</div>
 					</div>
+
 
 					<div class="perfil_categorias">
 						<h3>Idiomas</h3>
 						<form>
 							<label>Inglés (C1): </label>
-							<meter id="ingles" min="0" max="100" value="90" high=".75">90%</meter><br>
+							<meter id="ingles" min="0" max="100" value="80" high=".75">80%</meter><br>
 						</form>
 					</div>
 
 				</div>
 
-			</div>
+			</section>
 
-			<div id="formacion" class="sobremi_children">
+			<section id="formacion">
 
 				<h2>Formación</h2>
 
-						<div id="formacion_academica" class="formacion_children">
-							<h3 class="formacion_categorias">Formación académica</h3>
-							<ul class="formacion_categorias formacion_listas">
-								<li><span class="item">Grado en Física</span><br>Universidad Complutense de Madrid. 2011 - 2016</li>
+						<div id="formacion_academica">
+							<h3>Formación académica</h3>
+							<ul class="formacion_listas">
+								<li><span class="item">Grado en Física</span><br>Universidad Complutense de Madrid. 2016</li>
+								<li><span class="item">Máster en Nuevas Tecnologías Electrónicas y Fotónicas</span><br>Universidad Complutense de Madrid. 2023</li>
 							</ul>
 						</div>
 
 						<hr>
 
-						<div id="cursos" class="formacion_children">
-							<h3 class="formacion_categorias">Cursos</h3>
-							<ul class="formacion_categorias formacion_listas">
-								<li><span class="item">Machine Learning en Python</span><br>Plataforma Udemy. 50h. 2020</li>
-								<li><span class="item">Introducción a Tensorflow para Deep Learning</span><br>Plataforma Udacity. 20h. 2020</li>
-								<li><span class="item">Introducción a Machine Learning aplicado</span><br>Plataforma Coursera - AMII. 5h. 2020</li>
-								<li><span class="item">Análisis Exploratorio de Datos para Machine Learning</span><br>Plataforma Coursera - IBM. 5h. 2020</li>
-								<li><span class="item">Machine Learning Supervisado: Regresión</span><br>Plataforma Udemy. 11h. 2021</li>
-								<li><span class="item">Machine Learning Supervisado: Clasificación</span><br>Plataforma Udemy. 11h. 2021</li>
+						<div id="cursos">
+							<h3>Cursos</h3>
+							<ul class="formacion_listas">
+								<div class="cursos slides fade">
+									<li><span class="item">Machine Learning en Python</span><br>Plataforma Udemy. 50h. 2020</li>
+									<li><span class="item">Introducción a Tensorflow para Deep Learning</span><br>Plataforma Udacity. 20h. 2020</li>
+									<li><span class="item">Introducción a Machine Learning aplicado</span><br>Plataforma Coursera - AMII. 5h. 2020</li>
+								</div>
+								<div class="cursos slides fade">
+									<li><span class="item">Análisis Exploratorio de Datos para Machine Learning</span><br>Plataforma Coursera - IBM. 5h. 2020</li>
+									<li><span class="item">Machine Learning Supervisado: Regresión</span><br>Plataforma Udemy. 11h. 2021</li>
+									<li><span class="item">Machine Learning Supervisado: Clasificación</span><br>Plataforma Udemy. 11h. 2021</li>
+								</div>
+								<div style="text-align:left" class="dots">
+								    <span class="cursos dot active" onclick="currentSlide(1,'cursos')"></span> 
+								    <span class="cursos dot" onclick="currentSlide(2,'cursos')"></span> 
+								</div>
 							</ul>
+
 						</div>
 
 						<hr>
 
-						<div id="formacion_complementaria" class="formacion_children">
-							<h3 class="formacion_categorias">Formación complementaria</h3>
-							<ul class="formacion_categorias formacion_listas">
+						<div id="formacion_complementaria">
+							<h3>Formación complementaria</h3>
+							<ul class="formacion_listas">
 								<li><span class="item">Inglés nivel C1.2</span><br>Centro Superior de Idiomas Modernos (CSIM) de la UCM. 2019</li>
 							</ul>
 						</div>
 
 						<hr>
 
-						<div id="otra_formación" class="formacion_children">
-							<h3 class="formacion_categorias">Otra Formación</h3>
-							<ul class="formacion_categorias formacion_listas">
+						<div id="otra_formación">
+							<h3>Otra Formación</h3>
+							<ul class="formacion_listas">
 								<li><span class="item">Máster de Formación del Profesorado de ESO, Bachillerato, FP y enseñanza de idiomas</span><br>Universidad Complutense de Madrid. 2018</li>
 							</ul>
 						</div>
 
-			</div>
+			</section>
 
 	</section>
 
@@ -197,10 +255,12 @@
 
 		<hr>
 
-		<ul class="copyright">
-			<!-- <li>&copy; Copyright</li> -->
-			<li>Design by: <span style="color: #000">Carlos España</span></li>
-		</ul>
+		<div id="copyright">
+			<!-- &copy; Copyright -->
+			Design by: <span style="color: #000">Carlos España</span>
+		</div>
+
+		
 
 	</footer>
 
