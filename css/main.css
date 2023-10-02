@@ -171,7 +171,7 @@ body > section h2 ~ p {
 	}
 
 	article{
-		margin: 1rem 1rem;
+		margin: 1rem 2rem;
 		padding: 2rem;
 		display: inline-block;
 		background-color: #FFFFFF;
@@ -218,7 +218,7 @@ body > section h2 ~ p {
 
 	#sobremi > section{
 		clear: both;
-		margin: 2rem 0rem 4rem;
+		margin-bottom: 4rem;
 		padding: 1rem;
 		background-color: rgba(214,239,239,0.8);
 	}
@@ -240,39 +240,69 @@ body > section h2 ~ p {
 			display: flex;
 			justify-content: center;
 		}
-		.perfil_categorias{
+		.perfil_categorias > div{
 			display: inline-block;
 			vertical-align: top;
-			margin: 2rem;
+			margin: 2rem 2rem 0;
 			width: 16.5rem;
 		}
+		.perfil_categorias {
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+		
 
 
-		/*Formacion*/
-		#formacion > div:first-of-type{
+
+		/*Mis credenciales*/
+		#experiencia_profesional > ul p.icon-item {
+			padding-bottom: 2rem;
+			width: auto;
+		}
+		#credenciales ul li.icon-item {
+			display: flex;
+			align-items: center;
+			margin-bottom: 0;
+			width: auto;
+		}
+		#credenciales img,div.icon-item {
+			display: inline-block;
+			margin: 0.1rem;
+			padding: 0.35rem;
+		}
+		#credenciales img {
+			width: 11%;
+			height: 11%;
+		}
+		#formacion_academica li:not(li:last-child) {
+			padding-bottom: 2rem;
+		}
+		
+
+		#credenciales > div:first-of-type{
 			margin-top: 4rem;
 		}
-		#formacion > div{
+		#credenciales > div{
 			display: flex;
 			justify-content: center;
-			margin-top: 2rem;
-		}
-		#formacion > div h3,ul{
+			margin: 2rem 0;
+		} 
+		#credenciales > div h3,ul{
 			display: inline-block;
 			width: 35%;
 			margin: 0rem 2rem;
 		}
-		#formacion > div > ul{
+		#credenciales > div > ul{
 			padding-left: 0rem;
 		}
-		#formacion > div > h3{
+		#credenciales > div > h3{
 			text-align: right;
 		}
-		#formacion > div > ul li{
+		#credenciales > div > ul li{
 			margin-bottom: 1.5rem;
 			list-style-type: none; 
 		}
-		#formacion > div > ul li:last-child {
+		#credenciales > div > ul li:last-child {
 			margin-bottom: 0;
 		}
 		/*Formación > Cursos*/
@@ -281,14 +311,18 @@ body > section h2 ~ p {
 			padding: 0;
 		}
 		
-		.formacion_listas li .item{
+		#credenciales ul li span.item{
 			font-weight: bolder;
 		}
-		#formacion hr{
+		#credenciales hr{
 			margin: 0 auto;
-			width: 75%;
+			width: 65%;
 			opacity: 0.6;
+			position: relative;
+			right: -5%;
 		}
+
+
 
 /*Contacto*/
 
