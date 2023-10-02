@@ -255,30 +255,7 @@ body > section h2 ~ p {
 
 
 		/*Mis credenciales*/
-		#experiencia_profesional > ul p.icon-item {
-			padding-bottom: 2rem;
-			width: auto;
-		}
-		#credenciales ul li.icon-item {
-			display: flex;
-			align-items: center;
-			margin-bottom: 0;
-			width: auto;
-		}
-		#credenciales img,div.icon-item {
-			display: inline-block;
-			margin: 0.1rem;
-			padding: 0.35rem;
-		}
-		#credenciales img {
-			width: 11%;
-			height: 11%;
-		}
-		#formacion_academica li:not(li:last-child) {
-			padding-bottom: 2rem;
-		}
 		
-
 		#credenciales > div:first-of-type{
 			margin-top: 4rem;
 		}
@@ -322,6 +299,28 @@ body > section h2 ~ p {
 			right: -5%;
 		}
 
+		#experiencia_profesional > ul p.icon-item {
+			padding-bottom: 2rem;
+			width: auto;
+		}
+		#credenciales ul li.icon-item {
+			display: flex;
+			align-items: center;
+			margin-bottom: 0;
+			width: auto;
+		}
+		#credenciales img,div.icon-item {
+			display: inline-block;
+			margin: 0.1rem;
+			padding: 0.35rem;
+		}
+		#credenciales img {
+			width: 11%;
+			height: 11%;
+		}
+		#formacion_academica li:not(li:last-child) {
+			padding-bottom: 2rem;
+		}
 
 
 /*Contacto*/
